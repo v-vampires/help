@@ -30,6 +30,7 @@ public class MyInvocationHandler implements InvocationHandler {
         // 执行目标对象的方法
         Object result = method.invoke(target, args);
         // 在目标对象的方法执行之后简单的打印一下
+        
         System.out.println("-------------------after------------------");
         return result;
     }
