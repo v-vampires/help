@@ -64,8 +64,8 @@ public class Wrapper_ctrip_001 {
     }
     public static void main(String[] args) throws IOException {
         Wrapper_ctrip_001 instance = new Wrapper_ctrip_001();
-        instance.init("上海", "香港", "2016-06-01");
-        /*List<String> htmls = instance.getHtml();
+        instance.init("上海", "香港", "2018-06-01");
+        List<String> htmls = instance.getHtml();
         //解析
         Map<String, FlightData> flightDataMap = instance.processHtml(htmls);
         PriceData lowestPriceData = null;
@@ -77,9 +77,10 @@ public class Wrapper_ctrip_001 {
                 lowestPriceData= priceData;
             }
         }
+
         //用lowestPriceData booking
-        instance.getBooking(lowestPriceData.getParameter());*/
-        instance.getBooking(null);
+       /* instance.getBooking(lowestPriceData.getParameter());
+        instance.getBooking(null);*/
     }
 
     private static void readConfig(){

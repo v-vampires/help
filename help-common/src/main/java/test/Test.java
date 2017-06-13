@@ -9,6 +9,7 @@ public class Test {
         int[] arrayDate = getArrayDate(1211104);
         System.out.println(arrayDate[0]);
         System.out.println(arrayDate[0]+"," + arrayDate[1]);
+        System.out.println("abc".getBytes().length);
     }
 
     /**
