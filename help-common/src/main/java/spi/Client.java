@@ -6,7 +6,7 @@ package spi;
 public class Client {
 
     public static void main(String[] args) {
-        Spi spi = SpiFactory.getSpi("SPIA");
+        Spi spi = SpiFactory.getSpi("SPIB");
         System.out.println(spi.sayHello());
     }
 

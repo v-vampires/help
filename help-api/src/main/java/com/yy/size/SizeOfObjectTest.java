@@ -118,6 +118,6 @@ public class SizeOfObjectTest {
         person2.setAge(20);
         System.out.println("fullSizeOf(person1)=" + fullSizeOf(person1));
         System.out.println("fullSizeOf(person2)=" + fullSizeOf(person2));
-        System.out.println("fullSizeOf(new String())=" + fullSizeOf(new String("")));
+        System.out.println("fullSizeOf(new String())=" + fullSizeOf(new String("12")));
     }  
 }  

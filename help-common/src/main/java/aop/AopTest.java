@@ -12,6 +12,6 @@ public class AopTest {
     public void intecptorTest() throws InterruptedException {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("spring/spring.xml");
         SomeService someService = (SomeService)ctx.getBean("someService");
-        someService.doSomething(50);
+        someService.doSomething2(50);
     }
 }

@@ -5,8 +5,14 @@ package aop;
  */
 public class SomeService {
 
-    public void doSomething(int time) throws InterruptedException {
+    public void doSomething1(int time) throws InterruptedException {
         Thread.sleep(time);
-        System.out.println("do something");
+        System.out.println("do something1");
+    }
+
+    public void doSomething2(int time) throws InterruptedException {
+        Thread.sleep(time);
+        System.out.println("do something2");
+        doSomething1(time);
     }
 }

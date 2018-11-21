@@ -11,6 +11,7 @@
     <modules>
         <module>help-common</module>
         <module>help-api</module>
+        <module>help-agent</module>
     </modules>
 
 

@@ -17,12 +17,12 @@ public class FileChannelDemo {
         RandomAccessFile aFile = new RandomAccessFile("D:/fuzzy.sql","rw");
         FileChannel channel = aFile.getChannel();
         ByteBuffer buffer = ByteBuffer.allocate(128);
-        while(channel.read(buffer) != -1){
-            buffer.flip();
+        while(channel.read(buffer) != -1){//从channel 读取到 buffer
+            buffer.flip();//将buffer从写模式切换成读模式
             while (buffer.hasRemaining()){
-                System.out.print((char) buffer.get());
+                System.out.print((char) buffer.get());// read 1 byte at a time
             }
-            buffer.clear();
+            buffer.clear();//make buffer ready for writing
         }
         aFile.close();
         channel.close();
