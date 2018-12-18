@@ -101,18 +101,10 @@ public class Test {
         System.out.println(now);
         now = now/1000L*10000L+shift*1000+now%1000L;
         System.out.println(now);
-        //                  10.90.57.15:l:-6ba56eac:1667fe3f068:-7fb2
-        System.out.println("10.90.57.15:l:-6ba56eac:1667fe3f068:-7fb3".hashCode());
-        System.out.println("10.90.57.15:l:-6ba56eac:1667fe3f068:-7fb4".hashCode());
-        System.out.println("10.90.57.15:l:-6ba56eac:1667fe3f068:-7fb5".hashCode());
 
-        StringBuilder t = new StringBuilder();
-        for (int i = 0; i < 5; i++) {
-            t.append("'").append(i).append("'").append(",");
-        }
-        t.deleteCharAt(t.length()-1);
-        System.out.println(t.toString());
     }
+
+
 
     public static List<String> all() {
         List<String> all = Lists.newArrayList();

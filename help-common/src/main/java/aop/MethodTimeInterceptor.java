@@ -18,10 +18,18 @@ public class MethodTimeInterceptor {
     private void anyMethod(){}
 
     @Around("anyMethod()")
-    public Object doAround(ProceedingJoinPoint point) throws Throwable {
-        long start = System.currentTimeMillis();
+    public Object doAround1(ProceedingJoinPoint point) throws Throwable {
+        System.out.println("doAround1 start!");
         Object o = point.proceed();
-        System.out.println(point.getTarget().getClass()+"."+ point.getSignature().getName() + " cost time:" + (System.currentTimeMillis() - start));
+        System.out.println("doAround1 end!");
+        return o;
+    }
+
+    @Around("anyMethod()")
+    public Object doAround2(ProceedingJoinPoint point) throws Throwable {
+        System.out.println("doAround2 start!");
+        Object o = point.proceed();
+        System.out.println("doAround2 end!");
         return o;
     }
 
